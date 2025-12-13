@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/level_block/clear.svg" type="Texture" id=1]
 [ext_resource path="res://addons/level_block/level_block_node.gd" type="Script" id=2]
 [ext_resource path="res://addons/level_block/default_material.tres" type="Material" id=3]
+[ext_resource path="res://Cenas/0753b57b-3431-4ccb-a861-0cc7e7240eba.jpg" type="Texture" id=4]
 
 [node name="Spatial" type="Spatial"]
 
@@ -18,8 +19,9 @@ bottom_face = 0
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.196769, 0.0308686, 2.58282 )
 script = ExtResource( 2 )
 material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
+texture_sheet = ExtResource( 4 )
+texture_size = 525.0
+north_face = 64
 bottom_face = 0
 
 [node name="LevelBlock3" type="Spatial" parent="."]
