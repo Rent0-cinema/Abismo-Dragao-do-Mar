@@ -1,0 +1,136 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Assets/MeshLibrary.tres" type="MeshLibrary" id=1]
+[ext_resource path="res://Assets/Texturas/Casa 01-1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Texturas/Casa 04-1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Texturas/Casa 02-1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Texturas/Rua.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Texturas/Museu da Industria.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Texturas/Praça dos martires1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Texturas/Casa 03-1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Texturas/Dragão do Mar - Frontal.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Texturas/Dragão do Mar - Lateral2.png" type="Texture" id=10]
+
+[sub_resource type="QuadMesh" id=37]
+
+[sub_resource type="ORMSpatialMaterial" id=1]
+flags_transparent = true
+params_depth_draw_mode = 3
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="QuadMesh" id=38]
+
+[sub_resource type="ORMSpatialMaterial" id=5]
+flags_transparent = true
+params_depth_draw_mode = 3
+albedo_texture = ExtResource( 4 )
+
+[sub_resource type="QuadMesh" id=39]
+
+[sub_resource type="ORMSpatialMaterial" id=12]
+params_depth_draw_mode = 3
+albedo_texture = ExtResource( 8 )
+
+[sub_resource type="QuadMesh" id=40]
+
+[sub_resource type="ORMSpatialMaterial" id=16]
+flags_transparent = true
+params_depth_draw_mode = 3
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="QuadMesh" id=41]
+
+[sub_resource type="ORMSpatialMaterial" id=20]
+flags_transparent = true
+albedo_texture = ExtResource( 9 )
+
+[sub_resource type="QuadMesh" id=42]
+
+[sub_resource type="ORMSpatialMaterial" id=24]
+flags_transparent = true
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="QuadMesh" id=43]
+
+[sub_resource type="ORMSpatialMaterial" id=28]
+flags_transparent = true
+albedo_texture = ExtResource( 7 )
+
+[sub_resource type="QuadMesh" id=44]
+
+[sub_resource type="ORMSpatialMaterial" id=32]
+flags_transparent = true
+albedo_texture = ExtResource( 6 )
+
+[sub_resource type="QuadMesh" id=45]
+
+[sub_resource type="ORMSpatialMaterial" id=36]
+albedo_texture = ExtResource( 5 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Casa1" type="MeshInstance" parent="."]
+visible = false
+mesh = SubResource( 37 )
+skeleton = NodePath("")
+material/0 = SubResource( 1 )
+
+[node name="Casa2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+visible = false
+mesh = SubResource( 38 )
+skeleton = NodePath("../Casa1")
+material/0 = SubResource( 5 )
+
+[node name="Casa3" type="MeshInstance" parent="."]
+transform = Transform( 1.394, 0, 0, 0, 2, 0, 0, 0, 1, -3, 0, 0 )
+visible = false
+mesh = SubResource( 39 )
+material/0 = SubResource( 12 )
+
+[node name="Casa4" type="MeshInstance" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -5, 0, 0 )
+visible = false
+mesh = SubResource( 40 )
+skeleton = NodePath("../Casa3")
+material/0 = SubResource( 16 )
+
+[node name="Dragão" type="MeshInstance" parent="."]
+transform = Transform( 4, 0, 0, 0, 3, 0, 0, 0, 3, 8, 1, 0 )
+visible = false
+mesh = SubResource( 41 )
+material/0 = SubResource( 20 )
+
+[node name="Dragão Lateral" type="MeshInstance" parent="."]
+transform = Transform( 5.606, 0, 0, 0, 4.258, 0, 0, 0, 4.258, 3, 1, 0 )
+visible = false
+mesh = SubResource( 42 )
+skeleton = NodePath("../Casa2")
+material/0 = SubResource( 24 )
+
+[node name="PraçaDosMartires" type="MeshInstance" parent="."]
+transform = Transform( 4, 0, 0, 0, 2.057, 0, 0, 0, 2.057, 17, 1, 0 )
+visible = false
+mesh = SubResource( 43 )
+skeleton = NodePath("../Casa3")
+material/0 = SubResource( 28 )
+
+[node name="Museu da insdustria" type="MeshInstance" parent="."]
+transform = Transform( 4.5, 0, 0, 0, 4, 0, 0, 0, 2.057, -9, 1, 0 )
+visible = false
+mesh = SubResource( 44 )
+skeleton = NodePath("../PraçaDosMartires")
+material/0 = SubResource( 32 )
+
+[node name="Rua" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
+visible = false
+mesh = SubResource( 45 )
+skeleton = NodePath("../Dragão Lateral")
+material/0 = SubResource( 36 )
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+__meta__ = {
+"_editor_clip_": 0
+}

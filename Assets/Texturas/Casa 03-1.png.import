@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Praça dos martires1.png-87b1b0eb620a67a1c66f294308ef836a.s3tc.stex"
-path.etc2="res://.import/Praça dos martires1.png-87b1b0eb620a67a1c66f294308ef836a.etc2.stex"
+path.s3tc="res://.import/Casa 03-1.png-d84963fa693a104c005ea57c77ddc5be.s3tc.stex"
+path.etc2="res://.import/Casa 03-1.png-d84963fa693a104c005ea57c77ddc5be.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Texturas/Praça dos martires1.png"
-dest_files=[ "res://.import/Praça dos martires1.png-87b1b0eb620a67a1c66f294308ef836a.s3tc.stex", "res://.import/Praça dos martires1.png-87b1b0eb620a67a1c66f294308ef836a.etc2.stex" ]
+source_file="res://Assets/Texturas/Casa 03-1.png"
+dest_files=[ "res://.import/Casa 03-1.png-d84963fa693a104c005ea57c77ddc5be.s3tc.stex", "res://.import/Casa 03-1.png-d84963fa693a104c005ea57c77ddc5be.etc2.stex" ]
 
 [params]
 

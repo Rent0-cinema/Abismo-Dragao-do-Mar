@@ -19,7 +19,7 @@ GameManager="*res://Autoload/GameManager.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray(  )
+enabled=PoolStringArray( "res://addons/level_block/plugin.cfg" )
 
 [gui]
 
