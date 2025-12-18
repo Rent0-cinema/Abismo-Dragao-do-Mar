@@ -15,6 +15,30 @@ texture_sheet = ExtResource( 1 )
 texture_size = 64.0
 bottom_face = 0
 
+[node name="LevelBlock17" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.182455, 0.0308686, -1.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock18" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.18246, 0.0308686, -1.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock16" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18246, 0.0308686, -1.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
 [node name="LevelBlock2" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.196769, 0.0308686, 2.58282 )
 script = ExtResource( 2 )
@@ -40,6 +64,190 @@ texture_sheet = ExtResource( 1 )
 texture_size = 64.0
 bottom_face = 0
 
+[node name="LevelBlock7" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.17948, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock8" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.17948, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock9" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock10" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock11" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock12" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock13" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock14" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock20" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1795, 0.0308686, 2.57882 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock21" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1795, 0.0308686, 4.57882 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock22" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, 4.57882 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock23" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, 2.57882 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock24" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1795, 0.0308686, 2.57882 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock25" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1795, 0.0308686, 4.57882 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock15" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock26" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -1.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock27" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -3.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock28" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -5.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock29" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -7.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock30" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -9.42118 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock31" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -11.4212 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock32" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -13.4212 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
+[node name="LevelBlock19" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1795, 0.0308686, 0.578824 )
+script = ExtResource( 2 )
+material = ExtResource( 3 )
+texture_sheet = ExtResource( 1 )
+texture_size = 64.0
+bottom_face = 0
+
 [node name="LevelBlock5" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20076, 0.0308686, 2.58029 )
 script = ExtResource( 2 )
@@ -50,78 +258,6 @@ bottom_face = 0
 
 [node name="LevelBlock6" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20223, 0.0308686, 2.58029 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock7" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20076, 0.0308686, 4.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock8" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20076, 0.0308686, 6.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock9" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20076, 0.0308686, 8.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock10" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20076, 0.0308686, 10.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock11" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20076, 0.0308686, 10.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock12" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20076, 0.0308686, 12.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock13" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20076, 0.0308686, 12.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock14" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.200763, 0.0308686, 10.6045 )
-script = ExtResource( 2 )
-material = ExtResource( 3 )
-texture_sheet = ExtResource( 1 )
-texture_size = 64.0
-bottom_face = 0
-
-[node name="LevelBlock15" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.200763, 0.0308686, 12.6045 )
 script = ExtResource( 2 )
 material = ExtResource( 3 )
 texture_sheet = ExtResource( 1 )
