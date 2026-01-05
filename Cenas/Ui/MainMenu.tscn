@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Fonts/FontPlaceHolder.tres" type="DynamicFontData" id=1]
+[ext_resource path="res://Cenas/Ui/MainMenu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 134
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 1 )
+
+[node name="MainMenu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.0862745, 0.270588, 0.454902, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 283.0
+margin_top = 141.0
+margin_right = 740.0
+margin_bottom = 459.0
+custom_constants/separation = 60
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 457.0
+margin_bottom = 158.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 457.0
+margin_bottom = 158.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Abismo"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 218.0
+margin_right = 457.0
+margin_bottom = 318.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
+margin_left = 173.0
+margin_right = 284.0
+margin_bottom = 100.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_right = 111.0
+margin_bottom = 48.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer"]
+margin_right = 111.0
+margin_bottom = 48.0
+
+[node name="Seletor" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 21.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 21, 0 )
+custom_fonts/font = SubResource( 2 )
+text = ">"
+
+[node name="Start" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 25.0
+margin_right = 111.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 3 )
+text = "Start"
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 52.0
+margin_right = 111.0
+margin_bottom = 100.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2"]
+margin_right = 111.0
+margin_bottom = 48.0
+
+[node name="Seletor" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_right = 21.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 21, 0 )
+custom_fonts/font = SubResource( 2 )
+text = ">"
+
+[node name="Exit" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_left = 25.0
+margin_right = 111.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 86, 0 )
+custom_fonts/font = SubResource( 3 )
+text = "Exit"

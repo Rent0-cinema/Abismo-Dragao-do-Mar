@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/0753b57b-3431-4ccb-a861-0cc7e7240eba.jpg-759348e11d15e2306cd884981789ce86.s3tc.stex"
-path.etc2="res://.import/0753b57b-3431-4ccb-a861-0cc7e7240eba.jpg-759348e11d15e2306cd884981789ce86.etc2.stex"
+path.s3tc="res://.import/Background Placeholder.jpg-90e438e9f72331296a86c25072a4aedd.s3tc.stex"
+path.etc2="res://.import/Background Placeholder.jpg-90e438e9f72331296a86c25072a4aedd.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Cenas/0753b57b-3431-4ccb-a861-0cc7e7240eba.jpg"
-dest_files=[ "res://.import/0753b57b-3431-4ccb-a861-0cc7e7240eba.jpg-759348e11d15e2306cd884981789ce86.s3tc.stex", "res://.import/0753b57b-3431-4ccb-a861-0cc7e7240eba.jpg-759348e11d15e2306cd884981789ce86.etc2.stex" ]
+source_file="res://Assets/Backgrounds/Background Placeholder.jpg"
+dest_files=[ "res://.import/Background Placeholder.jpg-90e438e9f72331296a86c25072a4aedd.s3tc.stex", "res://.import/Background Placeholder.jpg-90e438e9f72331296a86c25072a4aedd.etc2.stex" ]
 
 [params]
 
