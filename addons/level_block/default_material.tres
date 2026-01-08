@@ -1,8 +1,10 @@
 [gd_resource type="SpatialMaterial" load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Backgrounds/Background Placeholder.jpg" type="Texture" id=1]
+[sub_resource type="StreamTexture" id=2]
+flags = 7
+load_path = "res://.import/Atlas01.png-6a592b2aa8d51929d79ea8ec10083d86.s3tc.stex"
 
 [resource]
 params_specular_mode = 4
-albedo_texture = ExtResource( 1 )
+albedo_texture = SubResource( 2 )
 metallic_specular = 0.0
