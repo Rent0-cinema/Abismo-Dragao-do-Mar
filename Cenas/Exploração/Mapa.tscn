@@ -1200,7 +1200,7 @@ east_face = 21
 bottom_face = 35
 
 [node name="LevelBlock21" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.00311, 0, -8 )
 script = ExtResource( 2 )
 material = SubResource( 14 )
 texture_sheet = ExtResource( 3 )
@@ -1210,7 +1210,7 @@ east_face = 25
 bottom_face = 55
 
 [node name="LevelBlock22" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.00311, 0, -8 )
 script = ExtResource( 2 )
 material = SubResource( 14 )
 texture_sheet = ExtResource( 3 )
@@ -1219,7 +1219,7 @@ north_face = 9
 bottom_face = 55
 
 [node name="LevelBlock23" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00311, 0, -8 )
 script = ExtResource( 2 )
 material = SubResource( 14 )
 texture_sheet = ExtResource( 3 )
@@ -1233,12 +1233,10 @@ script = ExtResource( 2 )
 material = SubResource( 15 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-north_face = 19
 west_face = 33
-bottom_face = 35
 
 [node name="LevelBlock25" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.00311, 2, -8 )
 script = ExtResource( 2 )
 material = SubResource( 14 )
 texture_sheet = ExtResource( 3 )
@@ -1246,7 +1244,7 @@ texture_size = 512.0
 north_face = 2
 
 [node name="LevelBlock26" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.00311, 2, -8 )
 script = ExtResource( 2 )
 material = SubResource( 14 )
 texture_sheet = ExtResource( 3 )
@@ -1254,104 +1252,95 @@ texture_size = 512.0
 north_face = 1
 
 [node name="LevelBlock27" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00311, 2, -8 )
 script = ExtResource( 2 )
 material = SubResource( 14 )
 texture_sheet = ExtResource( 3 )
 texture_size = 512.0
 north_face = 0
 
-[node name="LevelBlock28" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -8 )
-script = ExtResource( 2 )
-material = SubResource( 14 )
-texture_sheet = ExtResource( 3 )
-texture_size = 512.0
-
 [node name="LevelBlock29" type="Spatial" parent="Cubos-Blocos/Area04"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00310898, 0, -8 )
 script = ExtResource( 2 )
 material = SubResource( 17 )
 texture_sheet = ExtResource( 3 )
 texture_size = 512.0
 west_face = 25
-
-[node name="Corredor05" type="Spatial" parent="Cubos-Blocos"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.179, 0.031, -45.42 )
-script = ExtResource( 2 )
-material = SubResource( 16 )
-texture_sheet = ExtResource( 3 )
-texture_size = 512.0
-west_face = 26
 bottom_face = 55
 
-[node name="LevelBlock98" type="Spatial" parent="Cubos-Blocos/Corredor05"]
+[node name="Corredor05" type="Spatial" parent="Cubos-Blocos/Area04"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9995, 0.0001314, -21.9988 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+bottom_face = 35
+
+[node name="LevelBlock100" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+bottom_face = 35
+
+[node name="LevelBlock101" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+bottom_face = 35
+
+[node name="LevelBlock102" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+bottom_face = 35
+
+[node name="LevelBlock104" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
 script = ExtResource( 2 )
-material = SubResource( 16 )
-texture_sheet = ExtResource( 3 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-west_face = 27
-bottom_face = 55
+bottom_face = 35
 
-[node name="LevelBlock99" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
-script = ExtResource( 2 )
-material = SubResource( 16 )
-texture_sheet = ExtResource( 3 )
-texture_size = 512.0
-west_face = 28
-bottom_face = 55
-
-[node name="LevelBlock100" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6 )
+[node name="LevelBlock105" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
 script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
 bottom_face = 35
 
-[node name="LevelBlock101" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8 )
+[node name="LevelBlock106" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
 script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
 bottom_face = 35
 
-[node name="LevelBlock102" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10 )
+[node name="LevelBlock107" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.99852 )
 script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
 bottom_face = 35
 
-[node name="LevelBlock103" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12 )
-script = ExtResource( 2 )
-material = SubResource( 13 )
-texture_sheet = ExtResource( 1 )
-texture_size = 512.0
-bottom_face = 35
-
-[node name="LevelBlock104" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14 )
-script = ExtResource( 2 )
-material = SubResource( 13 )
-texture_sheet = ExtResource( 1 )
-texture_size = 512.0
-bottom_face = 35
-
-[node name="Cima" type="Spatial" parent="Cubos-Blocos/Corredor05"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+[node name="Lateral Dragão" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01032, 2, 12 )
 script = ExtResource( 2 )
 material = SubResource( 16 )
 texture_sheet = ExtResource( 3 )
 texture_size = 512.0
 west_face = 18
 
-[node name="LevelBlock98" type="Spatial" parent="Cubos-Blocos/Corredor05/Cima"]
+[node name="LevelBlock98" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05/Lateral Dragão"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
 script = ExtResource( 2 )
 material = SubResource( 16 )
@@ -1359,7 +1348,7 @@ texture_sheet = ExtResource( 3 )
 texture_size = 512.0
 west_face = 19
 
-[node name="LevelBlock99" type="Spatial" parent="Cubos-Blocos/Corredor05/Cima"]
+[node name="LevelBlock99" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05/Lateral Dragão"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
 script = ExtResource( 2 )
 material = SubResource( 16 )
@@ -1367,13 +1356,40 @@ texture_sheet = ExtResource( 3 )
 texture_size = 512.0
 west_face = 20
 
+[node name="LevelBlock100" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05/Lateral Dragão"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -2 )
+script = ExtResource( 2 )
+material = SubResource( 16 )
+texture_sheet = ExtResource( 3 )
+texture_size = 512.0
+west_face = 27
+bottom_face = 55
+
+[node name="LevelBlock101" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05/Lateral Dragão"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -4 )
+script = ExtResource( 2 )
+material = SubResource( 16 )
+texture_sheet = ExtResource( 3 )
+texture_size = 512.0
+west_face = 28
+bottom_face = 55
+
+[node name="Corredor05" type="Spatial" parent="Cubos-Blocos/Area04/Corredor05/Lateral Dragão"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00386429, -2, 0 )
+script = ExtResource( 2 )
+material = SubResource( 16 )
+texture_sheet = ExtResource( 3 )
+texture_size = 512.0
+west_face = 26
+bottom_face = 55
+
 [node name="Area05" type="Spatial" parent="Cubos-Blocos"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.179, 0.0308686, -61.4212 )
 script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock130" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
@@ -1381,7 +1397,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock131" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
@@ -1389,7 +1405,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock106" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
@@ -1397,7 +1413,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock128" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
@@ -1405,7 +1421,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock107" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
@@ -1413,7 +1429,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock109" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
@@ -1421,7 +1437,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock110" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4 )
@@ -1429,7 +1445,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock111" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6 )
@@ -1437,7 +1453,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock112" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8 )
@@ -1445,7 +1461,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock113" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8 )
@@ -1453,7 +1469,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock114" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8 )
@@ -1461,7 +1477,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock115" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8 )
@@ -1469,7 +1485,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock116" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8 )
@@ -1477,7 +1493,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock117" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8 )
@@ -1485,7 +1501,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock118" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -8 )
@@ -1493,7 +1509,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock119" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6 )
@@ -1501,7 +1517,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock120" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4 )
@@ -1509,7 +1525,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock121" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2 )
@@ -1517,7 +1533,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock122" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
@@ -1525,7 +1541,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock123" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
@@ -1533,7 +1549,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock125" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -2 )
@@ -1541,7 +1557,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock126" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4 )
@@ -1549,7 +1565,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock127" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6 )
@@ -1557,7 +1573,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock124" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
@@ -1565,7 +1581,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock129" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
@@ -1573,7 +1589,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock132" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4 )
@@ -1581,7 +1597,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock133" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6 )
@@ -1589,7 +1605,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock134" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6 )
@@ -1597,7 +1613,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock137" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4 )
@@ -1605,7 +1621,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock138" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
@@ -1613,7 +1629,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock139" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4 )
@@ -1621,7 +1637,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock135" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6 )
@@ -1629,7 +1645,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock136" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6 )
@@ -1637,7 +1653,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="LevelBlock108" type="Spatial" parent="Cubos-Blocos/Area05"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
@@ -1645,7 +1661,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
+bottom_face = 37
 
 [node name="Corredor06" type="Spatial" parent="Cubos-Blocos"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.179, 0.0308686, -71.4212 )
