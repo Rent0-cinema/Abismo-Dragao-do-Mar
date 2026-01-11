@@ -1545,6 +1545,23 @@ south_face = 19
 west_face = 33
 bottom_face = 35
 
+[node name="LevelBlock28" type="Spatial" parent="Cubos-Blocos/Area04/LevelBlock04"]
+transform = Transform( 0.858, 0, 0, 0, 0.858, 0, 0, 0, 0.858, -1.85534, -0.176705, 0.123981 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+south_face = 51
+flip_faces = true
+
+[node name="LevelBlock29" type="Spatial" parent="Cubos-Blocos/Area04/LevelBlock04"]
+transform = Transform( 0.858, 0, 0, 0, 0.858, 0, 0, 0, 0.858, -1.85534, -0.176705, -1.89714 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+south_face = 51
+
 [node name="LevelBlock05" type="Spatial" parent="Cubos-Blocos/Area04"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
 script = ExtResource( 2 )
@@ -1629,6 +1646,16 @@ texture_sheet = ExtResource( 1 )
 texture_size = 512.0
 west_face = 19
 bottom_face = 35
+
+[node name="LevelBlock28" type="Spatial" parent="Cubos-Blocos/Area04/LevelBlock14"]
+transform = Transform( 0.874, 0, 0, 0, 0.874, 0, 0, 0, 0.874, -1.78505, -0.127851, 0.0399704 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+north_face = 49
+south_face = 49
+flip_faces = true
 
 [node name="LevelBlock15" type="Spatial" parent="Cubos-Blocos/Area04"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6 )
