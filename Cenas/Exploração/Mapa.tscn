@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Assets/Atlas/Atlas - Casas.png" type="Texture" id=1]
 [ext_resource path="res://addons/level_block/level_block_node.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Cenas/Controle/Jogador.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Texturas/Arvores/Chão da praça.glb" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Texturas/Arvores/Pardes da praça.glb" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Atlas/Catedral.png" type="Texture" id=8]
 
 [sub_resource type="SpatialMaterial" id=3]
 flags_transparent = true
@@ -55,6 +56,10 @@ albedo_texture = ExtResource( 3 )
 flags_transparent = true
 albedo_texture = ExtResource( 1 )
 
+[sub_resource type="SpatialMaterial" id=19]
+flags_transparent = true
+albedo_texture = ExtResource( 8 )
+
 [sub_resource type="SpatialMaterial" id=14]
 flags_transparent = true
 albedo_texture = ExtResource( 3 )
@@ -81,7 +86,7 @@ visible = false
 script = ExtResource( 2 )
 material = SubResource( 3 )
 texture_sheet = SubResource( 2 )
-texture_size = 520.0
+texture_size = 512.0
 
 [node name="LevelBlock150" type="Spatial" parent="Cubos-Blocos/Ceu"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
@@ -1134,7 +1139,7 @@ west_face = 3
 bottom_face = 35
 
 [node name="Area03" type="Spatial" parent="Cubos-Blocos"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1795, 0.0308686, -15.4212 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2195, 0.0308686, -15.4212 )
 script = ExtResource( 2 )
 material = SubResource( 3 )
 texture_sheet = ExtResource( 1 )
@@ -1350,6 +1355,8 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
+north_face = 1
+west_face = 3
 bottom_face = 35
 
 [node name="LevelBlock58" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
@@ -1358,6 +1365,8 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
+south_face = 1
+west_face = 5
 bottom_face = 35
 
 [node name="LevelBlock59" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
@@ -1366,22 +1375,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
-bottom_face = 35
-
-[node name="LevelBlock60" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
-script = ExtResource( 2 )
-material = SubResource( 13 )
-texture_sheet = ExtResource( 1 )
-texture_size = 512.0
-bottom_face = 35
-
-[node name="LevelBlock61" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
-script = ExtResource( 2 )
-material = SubResource( 13 )
-texture_sheet = ExtResource( 1 )
-texture_size = 512.0
+south_face = 17
 bottom_face = 35
 
 [node name="LevelBlock62" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
@@ -1390,6 +1384,7 @@ script = ExtResource( 2 )
 material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
+north_face = 5
 bottom_face = 35
 
 [node name="LevelBlock55" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
@@ -1407,6 +1402,144 @@ material = SubResource( 13 )
 texture_sheet = ExtResource( 1 )
 texture_size = 512.0
 bottom_face = 35
+
+[node name="LevelBlock61" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+north_face = 17
+bottom_face = 35
+
+[node name="LevelBlock60" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+script = ExtResource( 2 )
+material = SubResource( 13 )
+texture_sheet = ExtResource( 1 )
+texture_size = 512.0
+south_face = 3
+bottom_face = 35
+
+[node name="Catedral" type="Spatial" parent="Cubos-Blocos/AreaExtra-01"]
+transform = Transform( 0.999994, 0, 0.00361282, 0, 1, 0, -0.00361282, 0, 0.999994, 4, 0, 0 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 43
+
+[node name="Catedral2" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, 0.00722504, 0, -1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 42
+
+[node name="Catedral3" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, -0.00705719, 0, 1.95329 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 44
+
+[node name="Catedral4" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999994, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999994, 0, 2, 0 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 35
+
+[node name="Catedral5" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, 0.00722504, 2, -1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 34
+
+[node name="Catedral6" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, -0.00722504, 2, 1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 36
+
+[node name="Catedral7" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999994, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999994, 0, 4, 0 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 27
+
+[node name="Catedral8" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, 0.00722504, 4, -1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 26
+
+[node name="Catedral9" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, -0.00722504, 4, 1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 28
+
+[node name="Catedral10" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999994, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999994, 0, 6, 0 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 19
+
+[node name="Catedral11" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, 0.00722504, 6, -1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 18
+
+[node name="Catedral12" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, -0.00722504, 6, 1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 20
+
+[node name="Catedral13" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999994, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999994, 0, 8, 0 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 9
+
+[node name="Catedral14" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, 0.00722504, 8, -1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 10
+
+[node name="Catedral15" type="Spatial" parent="Cubos-Blocos/AreaExtra-01/Catedral"]
+transform = Transform( 0.999993, 0, -0.00361282, 0, 1, 0, 0.00361282, 0, 0.999993, -0.00722504, 8, 1.99999 )
+script = ExtResource( 2 )
+material = SubResource( 19 )
+texture_sheet = ExtResource( 8 )
+texture_size = 512.0
+east_face = 12
 
 [node name="Corredor04" type="Spatial" parent="Cubos-Blocos"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.181, 0.031, -19.421 )
