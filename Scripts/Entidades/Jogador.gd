@@ -11,10 +11,10 @@ func _physics_process(_delta):
 	if tween is SceneTreeTween:
 		if tween.is_running():
 			return
-	if Input.is_action_pressed("forward") and not front_ray.is_colliding():
+	if Input.is_action_pressed("forward"):
 		tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 		tween.tween_property(self, "transform", transform.translated(Vector3.FORWARD * 2), TRAVEL_TIME)
-	if Input.is_action_pressed("back") and not front_ray.is_colliding():
+	if Input.is_action_pressed("back"):
 		tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 		tween.tween_property(self, "transform", transform.translated(Vector3.BACK * 2), TRAVEL_TIME)
 	if Input.is_action_pressed("left"):
