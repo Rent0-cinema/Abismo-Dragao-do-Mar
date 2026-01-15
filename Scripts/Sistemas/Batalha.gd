@@ -64,7 +64,7 @@ func _on_Correr_pressed():
 	yield(self, "textbox_closed")
 	
 	yield(get_tree().create_timer(0.25), "timeout")
-	get_tree().quit()
+	get_tree().change_scene("res://Cenas/Exploração/Mapa.tscn")
 
 
 func _on_Ataque_pressed():
@@ -88,7 +88,7 @@ func _on_Ataque_pressed():
 		yield($AnimationPlayer, "animation_finished")
 		
 		yield(get_tree().create_timer(0.25), "timeout")
-		get_tree().quit()
+		get_tree().change_scene("res://Cenas/Exploração/Mapa.tscn")
 		
 		
 		
