@@ -16,8 +16,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Global="res://Scripts/Sistemas/Global.gd"
 Estado="*res://Scripts/Sistemas/Estado.gd"
+SceneManager="res://Scripts/Sistemas/SceneManager.gd"
+Global="res://Scripts/Sistemas/Global.gd"
 
 [display]
 

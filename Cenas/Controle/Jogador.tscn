@@ -19,6 +19,7 @@ cast_to = Vector3( 0, 0, -1 )
 [node name="OmniLight" type="OmniLight" parent="."]
 
 [node name="UI" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="BarraHP" type="ColorRect" parent="UI"]
 anchor_left = 0.5

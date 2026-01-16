@@ -64,7 +64,7 @@ func _on_Correr_pressed():
 	yield(self, "textbox_closed")
 	
 	yield(get_tree().create_timer(0.25), "timeout")
-	get_tree().change_scene("res://Cenas/Exploração/Mapa.tscn")
+	end_battle()
 
 
 func _on_Ataque_pressed():
@@ -88,7 +88,7 @@ func _on_Ataque_pressed():
 		yield($AnimationPlayer, "animation_finished")
 		
 		yield(get_tree().create_timer(0.25), "timeout")
-		get_tree().change_scene("res://Cenas/Exploração/Mapa.tscn")
+		end_battle()
 		
 		
 		
@@ -103,3 +103,6 @@ func _on_Defender_pressed():
 	yield(get_tree().create_timer(0.25), "timeout")
 	
 	enemy_turn()
+
+func end_battle():
+	get_tree().change_scene("res://Cenas/Exploração/Mapa.tscn")

@@ -14,14 +14,21 @@ var tween
 
 func _ready():
 	encontro_aleatorio()
+	if Estado.player_transform != Transform():
+		 set_physics_process(false)
+		 set_process(false)
+		 global_transform = Estado.player_transform
+		 rotation.y = Estado.yaw
+		 $Camera.rotation.x = Estado.pitch
+		 set_physics_process(true)
+		 set_process(true)
+	
+	
 	
 func encontro_aleatorio():
 	 if rand_range(min_v, max_v) < chance_de_batalha:
-		 entrar_em_batalha()
+		 start_battle()
 
-func entrar_em_batalha():
-		get_parent().add_child(batalha.instance())
-		queue_free()
 
 func _physics_process(_delta):
 	if tween is SceneTreeTween:
@@ -44,4 +51,12 @@ func _physics_process(_delta):
 		tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 		tween.tween_property(self, "transform:basis", transform.basis.rotated(Vector3.UP, -PI / 2), TRAVEL_TIME)
 
+func save_state():
+	Estado.player_transform = global_transform
+	Estado.yaw = rotation.y
+	Estado.pitch = $Camera.rotation.x
 
+func start_battle():
+	save_state()
+	Estado.last_scene = "res://Cenas/Exploração/Mapa.tscn"
+	get_tree().change_scene("res://Cenas/Combate/Cena de Batalha.tscn")
