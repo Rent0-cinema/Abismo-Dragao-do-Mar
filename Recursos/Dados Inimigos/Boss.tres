@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Sprites/Inimigos/bl39le-removebg-preview.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Entidades/BaseInimigo.gd" type="Script" id=2]
+
+[resource]
+script = ExtResource( 2 )
+name = "Almirante"
+texture = ExtResource( 1 )
+health = 150
+damage = 5
