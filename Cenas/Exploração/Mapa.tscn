@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/Atlas/Atlas - Arvores.png" type="Texture" id=4]
 [ext_resource path="res://Cenas/Controle/Jogador.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Texturas/Arvores/Chão da praça.glb" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Texturas/Arvores/Pardes da praça.glb" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Texturas/Arvores/Muros.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://Assets/Atlas/Catedral.png" type="Texture" id=8]
 
 [sub_resource type="SpatialMaterial" id=3]
@@ -940,9 +940,6 @@ south_face = 5
 
 [node name="Chão da praça" parent="Cubos-Blocos/Corredor01" instance=ExtResource( 6 )]
 transform = Transform( 0.983, 0, 0, 0, -3.54062e-08, 0.245, 0, -0.81, -1.07093e-08, 4.92413, -1.17181, 2.74248 )
-
-[node name="Pardes da praça" parent="Cubos-Blocos/Corredor01" instance=ExtResource( 7 )]
-transform = Transform( 0.98, 0, 0, 0, -3.48817e-08, -0.257, 0, 0.798, -1.12338e-08, 4.86052, -0.481212, -13.9782 )
 
 [node name="Area02" type="Spatial" parent="Cubos-Blocos"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1795, 0.0308686, 0.483394 )
@@ -2348,3 +2345,7 @@ light_energy = 2.228
 light_indirect_energy = 0.605
 
 [node name="Jogador" parent="." instance=ExtResource( 5 )]
+
+[node name="Muros" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -3.77229e-08, -0.534, 0, 0.863, -2.33419e-08, 11.0743, -0.0977988, -14.7077 )
+mesh = ExtResource( 7 )
