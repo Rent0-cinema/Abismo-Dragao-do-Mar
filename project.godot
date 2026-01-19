@@ -16,8 +16,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Estado="*res://Scripts/Sistemas/Estado.gd"
-SceneManager="res://Scripts/Sistemas/SceneManager.gd"
+Estado="*res://Scripts/Autoload/Estado.gd"
+SceneManager="*res://Scripts/Autoload/SceneManager.gd"
+MusicManager="*res://Scripts/Autoload/MusicManager.gd"
 
 [display]
 
