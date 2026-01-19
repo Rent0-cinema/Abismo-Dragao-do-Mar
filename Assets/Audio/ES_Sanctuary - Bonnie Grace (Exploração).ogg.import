@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ES_Sanctuary - Bonnie Grace (Exploração).ogg-a03fa840e86807b4b7bca0b53c925dcc.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/ES_Sanctuary - Bonnie Grace (Exploração).ogg"
+dest_files=[ "res://.import/ES_Sanctuary - Bonnie Grace (Exploração).ogg-a03fa840e86807b4b7bca0b53c925dcc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
