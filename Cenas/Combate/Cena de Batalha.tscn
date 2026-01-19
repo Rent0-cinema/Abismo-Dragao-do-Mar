@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/Backgrounds/1080P/Area03 - imagem01.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Sprites/Inimigos/Soldado.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Tokens/Inimigo02.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Sistemas/Batalha.gd" type="Script" id=3]
 [ext_resource path="res://Assets/Fonts/FontPlaceHolder.tres" type="DynamicFontData" id=4]
 [ext_resource path="res://Recursos/Dados Inimigos/Inimigo 2.tres" type="Resource" id=5]
@@ -189,16 +189,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -139.0
-margin_top = -158.0
-margin_right = 150.0
-margin_bottom = 148.0
+margin_left = -286.0
+margin_top = -207.0
+margin_right = 309.0
+margin_bottom = 658.0
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="ProgressBar" type="ProgressBar" parent="Inimigo"]
-margin_right = 289.0
+margin_right = 595.0
 margin_bottom = 32.0
 grow_horizontal = 0
 rect_min_size = Vector2( 0, 32 )
@@ -220,9 +220,10 @@ valign = 1
 [node name="SpriteInimigo" type="TextureRect" parent="Inimigo"]
 modulate = Color( 1, 1, 1, 0.964706 )
 margin_top = 36.0
-margin_right = 289.0
-margin_bottom = 306.0
+margin_right = 595.0
+margin_bottom = 865.0
 rect_min_size = Vector2( 0, 270 )
+input_pass_on_modal_close_click = false
 texture = ExtResource( 2 )
 stretch_mode = 1
 

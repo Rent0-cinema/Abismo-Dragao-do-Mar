@@ -8,6 +8,7 @@ onready var selector_two = $CenterContainer/VBoxContainer/CenterContainer2/VBoxC
 var current_selection = 0 
 
 func _ready():
+	MusicManager.play_music(preload("res://Assets/Audio/Vatican Mystery - Trailer Worx (menu principal).ogg"))
 	set_current_selection(0)
 	
 func _process(delta):

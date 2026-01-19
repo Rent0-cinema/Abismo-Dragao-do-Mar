@@ -13,6 +13,7 @@ var chance_de_batalha = 8
 var tween
 
 func _ready():
+	MusicManager.play_music(preload("res://Assets/Audio/ES_Sanctuary - Bonnie Grace (Exploração).ogg"))
 	encontro_aleatorio()
 	if Estado.player_transform != Transform():
 		 set_physics_process(false)

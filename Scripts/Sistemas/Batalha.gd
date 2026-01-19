@@ -11,12 +11,14 @@ var is_defending = false
 
 
 func _ready():
+	MusicManager.play_music(
+		preload("res://Assets/Audio/ES_Approaching Your Nemesis - Experia(NormalBattle).ogg"))
 	randomize()
 
 	enemy = possible_enemies[randi() % possible_enemies.size()]
 
 	set_health($Inimigo/ProgressBar, enemy.health, enemy.health)
-	set_health($PaineldoJogador/DadosJogador/ProgressBar, Estado.current_health, Estado.max_health)
+	set_health($PaineldoJogador/DadosJogador/ProgressBar,Estado.current_health,Estado.max_health)
 
 	$Inimigo/SpriteInimigo.texture = enemy.texture
 
@@ -26,7 +28,7 @@ func _ready():
 	$CaixadeTexto.hide()
 	$PaineldeActions.hide()
 
-	display_text("Um %s Aparece!" % enemy.name.to_upper())
+	display_text("Um %s aparece!" % enemy.name.to_upper())
 	yield(self, "textbox_closed")
 	$PaineldeActions.show()
 
@@ -61,14 +63,23 @@ func enemy_turn():
 		display_text("Você defendeu com sucesso")
 		yield(self, "textbox_closed")
 	else:
-		current_player_health = max(0, current_player_health - enemy.damage)
-		set_health($PaineldoJogador/DadosJogador/ProgressBar, current_player_health, Estado.max_health)
+		current_player_health = max(0,current_player_health - enemy.damage)
+
+		set_health($PaineldoJogador/DadosJogador/ProgressBar,current_player_health,Estado.max_health)
+
+		Estado.current_health = current_player_health
 
 		$AnimationPlayer.play("tremor")
 		yield($AnimationPlayer, "animation_finished")
 
 		display_text("%s deu %d de dano" % [enemy.name, enemy.damage])
 		yield(self, "textbox_closed")
+
+		if current_player_health == 0:
+			display_text("Você foi derrotado...")
+			yield(self, "textbox_closed")
+			game_over()
+			return
 
 	$PaineldeActions.show()
 
@@ -85,8 +96,9 @@ func _on_Ataque_pressed():
 	display_text("Você balança a sua espada")
 	yield(self, "textbox_closed")
 
-	current_enemy_health = max(0, current_enemy_health - Estado.damage)
-	set_health($Inimigo/ProgressBar, current_enemy_health, enemy.health)
+	current_enemy_health = max(0,current_enemy_health - Estado.damage)
+
+	set_health($Inimigo/ProgressBar,current_enemy_health,enemy.health)
 
 	$AnimationPlayer.play("inimigo_damaged")
 	yield($AnimationPlayer, "animation_finished")
@@ -120,3 +132,8 @@ func _on_Defender_pressed():
 
 func end_battle():
 	get_tree().change_scene("res://Cenas/Exploração/Mapa.tscn")
+
+
+func game_over():
+	yield(get_tree().create_timer(0.5), "timeout")
+	get_tree().change_scene("res://Cenas/Ui/Obrigado.tscn")
