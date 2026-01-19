@@ -18,7 +18,6 @@ config/icon="res://icon.png"
 
 Estado="*res://Scripts/Sistemas/Estado.gd"
 SceneManager="res://Scripts/Sistemas/SceneManager.gd"
-Global="res://Scripts/Sistemas/Global.gd"
 
 [display]
 

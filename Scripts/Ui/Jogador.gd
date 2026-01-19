@@ -9,7 +9,7 @@ onready var back_ray := $BackRay
 
 var min_v = 0
 var max_v = 100
-var chance_de_batalha = 10
+var chance_de_batalha = 8
 var tween
 
 func _ready():
