@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ES_Sacrifice - Dream Cave (Créditos).ogg-0b0ae0491e385c8f0dd2599e2f1349af.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/ES_Sacrifice - Dream Cave (Créditos).ogg"
+dest_files=[ "res://.import/ES_Sacrifice - Dream Cave (Créditos).ogg-0b0ae0491e385c8f0dd2599e2f1349af.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

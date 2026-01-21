@@ -9,6 +9,8 @@ var current_enemy_health = 0
 var is_defending = false 
 
 func _ready(): 
+	MusicManager.play_music(preload("res://Assets/Audio/Galaxy Verse - Ruiqi Zhao (Boss).ogg"))
+	
 	set_health($Inimigo/ProgressBar, enemy.health, enemy.health)
 	set_health($PaineldoJogador/DadosJogador/ProgressBar, Estado.current_health, Estado.max_health)
 	$Inimigo/SpriteInimigo.texture = enemy.texture

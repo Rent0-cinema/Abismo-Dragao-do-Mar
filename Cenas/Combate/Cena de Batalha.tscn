@@ -1,10 +1,11 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
-[ext_resource path="res://Assets/Backgrounds/Area01 - imagem07.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Sprites/Inimigos/bl39le-removebg-preview.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Backgrounds/1080P/Area03 - imagem01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Tokens/Inimigo02.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Sistemas/Batalha.gd" type="Script" id=3]
 [ext_resource path="res://Assets/Fonts/FontPlaceHolder.tres" type="DynamicFontData" id=4]
 [ext_resource path="res://Recursos/Dados Inimigos/Inimigo 2.tres" type="Resource" id=5]
+[ext_resource path="res://Recursos/Dados Inimigos/Inimigo 1.tres" type="Resource" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 0.0
@@ -174,26 +175,30 @@ anchor_bottom = 0.894
 margin_right = 512.0
 margin_bottom = 63.6
 script = ExtResource( 3 )
-enemy = ExtResource( 5 )
+possible_enemies = [ ExtResource( 6 ), ExtResource( 5 ) ]
 
 [node name="Fundo" type="TextureRect" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
 texture = ExtResource( 1 )
 expand = true
+stretch_mode = 7
 
 [node name="Inimigo" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -173.0
-margin_top = -167.0
-margin_right = 174.0
-margin_bottom = 216.0
+margin_left = -286.0
+margin_top = -207.0
+margin_right = 309.0
+margin_bottom = 658.0
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="ProgressBar" type="ProgressBar" parent="Inimigo"]
-margin_right = 347.0
+margin_right = 595.0
 margin_bottom = 32.0
 grow_horizontal = 0
 rect_min_size = Vector2( 0, 32 )
@@ -215,10 +220,12 @@ valign = 1
 [node name="SpriteInimigo" type="TextureRect" parent="Inimigo"]
 modulate = Color( 1, 1, 1, 0.964706 )
 margin_top = 36.0
-margin_right = 347.0
-margin_bottom = 383.0
+margin_right = 595.0
+margin_bottom = 865.0
+rect_min_size = Vector2( 0, 270 )
+input_pass_on_modal_close_click = false
 texture = ExtResource( 2 )
-stretch_mode = 4
+stretch_mode = 1
 
 [node name="PaineldoJogador" type="Panel" parent="."]
 margin_top = 486.0

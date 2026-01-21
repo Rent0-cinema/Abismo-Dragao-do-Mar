@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Vatican Mystery - Trailer Worx (menu principal).ogg-60519bfd46e5ba86463277bfad59de17.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Vatican Mystery - Trailer Worx (menu principal).ogg"
+dest_files=[ "res://.import/Vatican Mystery - Trailer Worx (menu principal).ogg-60519bfd46e5ba86463277bfad59de17.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
